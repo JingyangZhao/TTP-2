@@ -20,4 +20,4 @@ The information of the stored scheudle in the code:
 ① It is a $n\times(2n-2)$ matrix;  
 ② The $i$-th row indicates team $t_i$, the $j$-th column indicates the $j$-th day in the schedule, item $t_{i,j}$ (resp., $-t_{i,j}$) on $i$-th row and $j$-th column indicates team $t_i$ play an away (resp., home) game with team $t_{i,j}$.
 
-Note that we only store the best-found results but did not store the schedule since it would use some extra time.
+Note that in our code we only stored the best-found results but did not store the best-found schedule since it would use some extra time.
