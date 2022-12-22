@@ -10,13 +10,13 @@ You can run .cpp directly, the input has already been given, and the output incl
 
 Before running each instance, we initialize the random environment (by setting srand(0)). Different environments may generate different results.
 
-Some parameters in the code:
-int opt: a 0/1 variable indicating the swapping heuristic; 
-int f_check: a 0/1 variable indicating the check of the correctness of the output;
-int iter: the number of rounds the algorithm performs/the number of times the algorithm restarts;
+Some parameters in the code:  
+int opt: a 0/1 variable indicating the swapping heuristic;  
+int f_check: a 0/1 variable indicating the check of the correctness of the output;  
+int iter: the number of rounds the algorithm performs/the number of times the algorithm restarts;  
 int FFF: a -1/1 variable indicating the initial directions of edges between super-teams: if FFF=-1, the directed edges between super-teams will be reversed compared with the setting FFF=1; both settings can generate feasible solutions; when we restart the algorithm, we may set FFF=-FFF to get better results.
 
-The information of the stored scheudle in the code:
+The information of the stored scheudle in the code:  
 ① It is a $n\times(2n-2)$ matrix;  
 ② The $i$-th row indicates team $t_i$, the $j$-th column indicates the $j$-th day in the schedule, item $t_{i,j}$ (resp., $-t_{i,j}$) on $i$-th row and $j$-th column indicates team $t_i$ play an away (resp., home) game with team $t_{i,j}$.
 
